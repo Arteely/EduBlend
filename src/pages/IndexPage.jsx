@@ -31,7 +31,7 @@ export default function IndexPage() {
         <div className="flex-1">
           <img
             className="w-full h-auto"
-            src="./src/assets/Right.png"
+            src="./public/Right.png"
             alt="EduBlend"
           ></img>
         </div>
@@ -40,7 +40,7 @@ export default function IndexPage() {
         <div className="flex-1">
           <img
             className="w-full h-auto"
-            src="./src/assets/Left.png"
+            src="./public/Left.png"
             alt="EduBlend"
           ></img>
         </div>
