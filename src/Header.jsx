@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           <Link to="/">
-            <img className="h-12" src="./public/EdublendLogo.png" alt="" />
+            <img className="h-12" src="./EdublendLogo.png" alt="" />
           </Link>
           <div className="flex gap-4 items-center">
             <Link
