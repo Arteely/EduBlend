@@ -8,7 +8,7 @@ export default function LoginPage() {
         >
           <img
             class="h-8 mr-2"
-            src="./src/assets/EdublendLogo.png"
+            src="/EdublendLogo.png"
             alt="logo"
           ></img>
         </a>
