@@ -9,7 +9,7 @@ export default function AboutPage() {
           <div class="my-8 xl:mb-16 xl:mt-12">
             <img
               class="w-full aspect-video object-cover"
-              src="./src/assets/about-us-img.png"
+              src="/about-us-img.png"
               alt=""
             />
           </div>
