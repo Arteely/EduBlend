@@ -108,8 +108,22 @@ export default function StudentPage() {
                   <td class="px-6 py-4">Saed Herbawi</td>
                   <td class="px-6 py-4 font-bold">18.04, 18:00</td>
                 </tr>
+                <tr class="border-b border-light-purple text-sm text-purple hover:bg-light-purple">
+                  <th
+                    scope="row"
+                    class="flex items-center px-6 py-4 whitespace-nowrap dark:text-white"
+                  >
+                    <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">
+                      A
+                    </h2>
+                    <div class="p-2 text-purple font-semibold">Art/PE</div>
+                  </th>
+                  <td class="px-6 py-4">Artem Artemyev</td>
+                  <td class="px-6 py-4 font-bold">18.04, 19:00</td>
+                </tr>
               </tbody>
             </table>
+            <button className="my-2 bg-purple text-sm text-white rounded-full">See More</button>
           </div>
           <div className="flex flex-1 flex-col m-4 p-4 rounded-xl border border-purple">
             <h2 className="text-purple text-lg font-bold mb-4">
@@ -184,6 +198,7 @@ export default function StudentPage() {
                 </tr>
               </tbody>
             </table>
+            <button className="my-2 bg-purple text-sm text-white rounded-full">See More</button>
           </div>
         </div>
       </div>
