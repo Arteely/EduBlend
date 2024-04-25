@@ -34,7 +34,7 @@ export default function StudentBar() {
         <tbody>
         <tr class="bg-white border-b border-light-purple hover:bg-light-purple rounded-xl">
                 <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                    <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">A</h2>
+                    <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">N</h2>
                     <div class="ps-3">
                         <div class="text-purple font-semibold">Neil Sims</div>
                         <div class="font-normal text-purple">neil.sims@gmail.com</div>
@@ -54,7 +54,7 @@ export default function StudentBar() {
             </tr>
             <tr class="bg-white border-b rounded-full border-light-purple hover:bg-light-purple">
                 <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">A</h2>
+                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">B</h2>
                     <div class="ps-3">
                         <div class="text-purple font-semibold">Bonnie Green</div>
                         <div class="font-normal text-purple">bonnie@gmail.com</div>
@@ -74,7 +74,7 @@ export default function StudentBar() {
             </tr>
             <tr class="bg-white border-b border-light-purple hover:bg-light-purple">
                 <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">A</h2>
+                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">J</h2>
                     <div class="ps-3">
                         <div class="text-purple font-semibold">Jese Leos</div>
                         <div class="font-normal text-purple">jese@gmail.com</div>
@@ -94,7 +94,7 @@ export default function StudentBar() {
             </tr>
             <tr class="bg-white border-b border-light-purple hover:bg-light-purple">
                 <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">A</h2>
+                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">T</h2>
                     <div class="ps-3">
                         <div class="text-purple font-semibold">Thomas Lean</div>
                         <div class="font-normal text-purple">thomes@gmail.com</div>
@@ -114,7 +114,7 @@ export default function StudentBar() {
             </tr>
             <tr class="bg-white border-b border-light-purple hover:bg-light-purple">
                 <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">A</h2>
+                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">L</h2>
                     <div class="ps-3">
                         <div class="text-purple font-semibold">Leslie Livingston</div>
                         <div class="font-normal text-purple">leslie@gmail.com</div>
@@ -134,7 +134,7 @@ export default function StudentBar() {
             </tr>
             <tr class="bg-white border-b border-light-purple hover:bg-light-purple">
                 <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">A</h2>
+                <h2 class="w-10 h-10 text-xl rounded-full bg-purple flex items-center justify-center">L</h2>
                     <div class="ps-3">
                         <div class="text-purple font-semibold">Leslie Livingston</div>
                         <div class="font-normal text-purple">leslie@gmail.com</div>

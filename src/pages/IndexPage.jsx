@@ -24,7 +24,7 @@ export default function IndexPage() {
             <Link className="text-white" to="/sign-up">For Parents</Link>
             </button>
             <button className="rounded-3xl px-8  bg-white border-purple hover:bg-dark-purple">
-              <Link className="text-purple" to="/teacher-view">For Teachers</Link> 
+              <Link className="text-purple" to="/sign-up">For Teachers</Link> 
             </button>
           </div>
         </div>
