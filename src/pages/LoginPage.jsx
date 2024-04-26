@@ -48,7 +48,7 @@ export default function LoginPage() {
                   required=""
                 ></input>
               </div>
-              <div class="flex items-center justify-between">
+              <div class="flex items-center justify-between pb-4">
                 <div class="flex items-start">
                   <div class="flex items-center h-5">
                     <input
@@ -75,12 +75,15 @@ export default function LoginPage() {
                   Forgot password?
                 </a>
               </div>
-              <button
-                type="submit"
-                class="w-full bg-purple hover:bg-primary-700 hover:bg-dark-purple focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              >
-                <Link to="/teacher-view" className="text-white">Sign in</Link>
-              </button>
+              <Link to="/teacher-view" className="text-white py-2.5">
+                <button
+                  type="submit"
+                  class="w-full bg-purple hover:bg-primary-700 hover:bg-dark-purple focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-sm text-center"
+                >
+                  Sign in
+                </button>
+              </Link>
+
               <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                 Don’t have an account yet?{" "}
                 <Link
