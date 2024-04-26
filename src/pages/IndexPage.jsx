@@ -21,28 +21,24 @@ export default function IndexPage() {
           </p>
           <div className="column-2 flex gap-12">
             <button className="rounded-3xl px-8  bg-purple hover:bg-dark-purple">
-            <Link className="text-white" to="/sign-up">For Parents</Link>
+              <Link className="text-white" to="/sign-up">
+                For Parents
+              </Link>
             </button>
             <button className="rounded-3xl px-8  bg-white border-purple hover:bg-dark-purple">
-              <Link className="text-purple" to="/sign-up">For Teachers</Link> 
+              <Link className="text-purple" to="/sign-up">
+                For Teachers
+              </Link>
             </button>
           </div>
         </div>
         <div className="flex-1">
-          <img
-            className="w-full h-auto"
-            src="/Right.png"
-            alt="EduBlend"
-          ></img>
+          <img className="w-full h-auto" src="/Right.png" alt="EduBlend"></img>
         </div>
       </div>
       <div className="flex">
         <div className="flex-1">
-          <img
-            className="w-full h-auto"
-            src="/Left.png"
-            alt="EduBlend"
-          ></img>
+          <img className="w-full h-auto" src="/Left.png" alt="EduBlend"></img>
         </div>
         <div className="flex flex-col justify-center flex-1 gap-4 mx-12 my-6">
           <div>
@@ -65,10 +61,15 @@ export default function IndexPage() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <h3 className="text-xl font-bold">Find your child's learning style.</h3>
-          <button className="rounded-3xl px-8 text-white bg-purple hover:bg-dark-purple">
-              Take the test now
+          <h3 className="text-xl font-bold">
+            Find your child's learning style.
+          </h3>
+
+          <Link to="/test-page">
+            <button className="rounded-3xl w-full px-8 text-white bg-purple hover:bg-dark-purple">
+              Take the test now.
             </button>
+          </Link>
         </div>
       </div>
     </main>
