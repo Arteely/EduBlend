@@ -1,6 +1,7 @@
 import StudentBar from "../components/StudentBar";
 import Calendar from "../components/Calendar";
 import ForumCard from "../components/ForumCard";
+import { Link } from "react-router-dom";
 
 export default function TeacherPage() {
   return (
@@ -20,9 +21,11 @@ export default function TeacherPage() {
             <button className="px-4 py-1 mr-4 text-sm text-white bg-purple border-2 border-purple rounded-full hover:bg-dark-purple hover:text-white">
               Post Homework
             </button>
+            <Link to="/teacher-forum">
             <button className="px-4 py-1 text-sm text-white bg-purple border-2 border-purple rounded-full hover:bg-dark-purple hover:text-white">
               Visit Teacher Forum
             </button>
+            </Link>
           </div>
         </div>
         <div className="grid grid-cols-10 gap-6">

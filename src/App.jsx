@@ -9,6 +9,7 @@ import TeacherPage from "./pages/TeacherPage";
 import StudentPage from "./pages/StudentPage";
 import TestPage from "./pages/TestPage";
 import NoPage from "./pages/NoPage";
+import ForumPage from "./pages/ForumPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path={"/teacher-view"} element={<TeacherPage/>} />
           <Route path={"/student-view"} element={<StudentPage/>} />
           <Route path={"/test-page"} element={<TestPage/>} />
+          <Route path={"/teacher-forum"} element={<ForumPage/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

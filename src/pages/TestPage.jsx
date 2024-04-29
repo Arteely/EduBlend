@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+/*I'm aware this is the worst way of doing the questions but it is what it is */
+
 export default function TestPage() {
   return (
     <div>
