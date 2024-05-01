@@ -7,7 +7,9 @@ export default function TestPage() {
     <div>
       <div className="flex justify-around my-12 py-4 border-b border-light-purple items-center">
         <header className="w-1/5">
-          <h2 className="text-purple text-3xl font-bold mb-4">YOUR LEARNING STYLE QUIZ</h2>
+          <h2 className="text-purple text-3xl font-bold mb-4">
+            YOUR LEARNING STYLE QUIZ
+          </h2>
           <p className="text-sm text-dark-purple">
             Find your learning style by taking the quiz below, and answer based
             on which fits best for you.
@@ -15,20 +17,30 @@ export default function TestPage() {
         </header>
         <img src="/testPage.png" alt="Test Page Image" />
       </div>
+      {/*
       <div className="flex w-5/6 m-auto">
         <div className="w-full flex flex-col">
-            <div className="h-8 bg-dark-purple border-r border-purple mb-4"></div>
-            <h1 className="flex text-purple font-bold">1 <h2 className="font-semibold text-4xl">Audiotory</h2></h1>
+          <div className="h-8 bg-dark-purple border-r border-purple mb-4"></div>
+          <h1 className="flex text-purple font-bold">
+            1 <h2 className="font-semibold text-4xl">Audiotory</h2>
+          </h1>
         </div>
         <div className="w-full flex flex-col">
-            <div className="h-8 bg-light-purple border-r border-purple mb-4"></div>
-            <h1 className="flex text-dark-purple font-bold">2 <h2 className="font-semibold text-4xl">Visual</h2></h1>
+          <div className="h-8 bg-light-purple border-r border-purple mb-4"></div>
+          <h1 className="flex text-dark-purple font-bold">
+            2 <h2 className="font-semibold text-4xl">Visual</h2>
+          </h1>
         </div>
         <div className="w-full flex flex-col">
-            <div className="h-8 bg-light-purple mb-4"></div>
-            <h1 className="flex text-dark-purple font-bold">3 <h2 className="font-semibold text-4xl">Tactile</h2></h1>
-        </div>
+          <div className="h-8 bg-light-purple mb-4"></div>
+          <h1 className="flex text-dark-purple font-bold">
+            3 <h2 className="font-semibold text-4xl">Tactile</h2>
+          </h1>
+        </div>{" "}
       </div>
+       */}
+      
+
       <div className="flex flex-col items-center space-y-4 py-4 divide-y divide-light-purple">
         <div className="text-center w-5/6 py-8">
           <h3 className="text-lg text-purple uppercase font-light">
@@ -296,11 +308,10 @@ export default function TestPage() {
           </div>
         </div>
         <Link to="/student-view">
-        <button className="rounded-full bg-purple text-white hover:bg-light-purple hover:text-purple">
-          Finish Test &gt;
-        </button>
+          <button className="rounded-full bg-purple text-white hover:bg-light-purple hover:text-purple">
+            Finish Test &gt;
+          </button>
         </Link>
-        
       </div>
     </div>
   );
