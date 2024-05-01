@@ -1,6 +1,46 @@
+import { useEffect, useState } from "react";
 import Calendar from "../components/Calendar";
+function shuffleArray(array) {
+  let currentIndex = array.length,
+    randomIndex;
 
+  // While there remain elements to shuffle.
+  while (currentIndex !== 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
 export default function StudentPage() {
+  const [subjects, setSubjects] = useState([]);
+
+  useEffect(() => {
+    const initialSubjects = [
+      { name: "Math"},
+      { name: "Science"},
+      { name: "Turkish"},
+      { name: "Art"},
+      { name: "History"},
+      { name: "Geography"},
+      { name: "Music"},
+      { name: "Reading"},
+      { name: "PE"},
+      { name: "Geometry"},
+      { name: "Literature"},
+    ];
+
+    // Shuffle and slice the array to get only 4 random subjects
+    setSubjects(shuffleArray([...initialSubjects]).slice(0, 4));
+  }, []);
+
   return (
     <section className="grid grid-cols-4 m-8">
       <div className="col-span-1">
@@ -11,30 +51,19 @@ export default function StudentPage() {
           Suggested Content
         </h3>
         <div className="border-b border-light-purple pb-8 flex justify-center gap-16">
-          <div className="p-6 bg-purple text-white rounded-xl h-40 w-40 flex flex-col items-center justify-center hover:bg-light-purple">
-            <div className="w-12 h-12 font-bold text-2xl text-purple bg-white rounded-full flex items-center justify-center">
-              +
+          {subjects.map((subject, index) => (
+            <div
+              key={subject.name}
+              className={`p-6 ${
+                index % 2 === 0 ? "bg-purple" : "bg-dark-purple"
+              } text-white uppercase rounded-xl h-40 w-40 flex flex-col items-center justify-center hover:bg-light-purple`}
+            >
+              <div className="w-12 h-12 font-bold text-2xl text-purple bg-white rounded-full flex items-center justify-center">
+                +
+              </div>
+              <div className="text-2xl font-bold">{subject.name}</div>
             </div>
-            <div className="text-2xl font-bold">MATH</div>
-          </div>
-          <div className="p-6 bg-dark-purple text-white rounded-xl h-40 w-40 flex flex-col items-center justify-center hover:bg-light-purple">
-            <div className="w-12 h-12 font-bold text-2xl text-purple bg-white rounded-full flex items-center justify-center">
-              +
-            </div>
-            <div className="text-2xl font-bold text-center">SCIENCE</div>
-          </div>
-          <div className="p-6 bg-purple text-white rounded-xl h-40 w-40 flex flex-col items-center justify-center hover:bg-light-purple">
-            <div className="w-12 h-12 font-bold text-2xl text-purple bg-white rounded-full flex items-center justify-center">
-              +
-            </div>
-            <div className="text-2xl font-bold">TURKISH</div>
-          </div>
-          <div className="p-6 bg-dark-purple text-white rounded-xl h-40 w-40 flex flex-col items-center justify-center hover:bg-light-purple">
-            <div className="w-12 h-12 font-bold text-2xl text-purple bg-white rounded-full flex items-center justify-center">
-              +
-            </div>
-            <div className="text-2xl font-bold">ART/PE</div>
-          </div>
+          ))}
         </div>
         <div className="flex">
           <div className="flex flex-1 flex-col m-4 p-4 rounded-xl border border-purple">
@@ -123,7 +152,9 @@ export default function StudentPage() {
                 </tr>
               </tbody>
             </table>
-            <button className="my-2 bg-purple text-sm text-white rounded-full">See More</button>
+            <button className="my-2 bg-purple text-sm text-white rounded-full">
+              See More
+            </button>
           </div>
           <div className="flex flex-1 flex-col m-4 p-4 rounded-xl border border-purple">
             <h2 className="text-purple text-lg font-bold mb-4">
@@ -198,7 +229,9 @@ export default function StudentPage() {
                 </tr>
               </tbody>
             </table>
-            <button className="my-2 bg-purple text-sm text-white rounded-full">See More</button>
+            <button className="my-2 bg-purple text-sm text-white rounded-full">
+              See More
+            </button>
           </div>
         </div>
       </div>
