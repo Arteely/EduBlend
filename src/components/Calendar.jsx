@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ScrollingText from "./ScrollingText";
 
 function DateTime() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -331,46 +332,46 @@ export default function Calendar() {
             </table>
           </div>
         </div>
-        <div class="md:py-8 py-5 md:px-4 px-5 rounded-xl border border-purple">
-          <div class="px-4">
-            <div class="border-b pb-4 border-gray-400 border-dashed">
-              <p class="text-xs font-light leading-3 text-gray-500 dark:text-gray-300">
-                9:00 AM
-              </p>
-              <a
-                tabindex="0"
-                class="focus:outline-none text-lg font-medium leading-5 text-gray-800 dark:text-gray-100 mt-2"
-              >
-                Zoom call with parents
-              </a>
-              <p class="text-sm pt-2 leading-4 leading-none text-gray-600 dark:text-gray-300">
-                Discussion on current progress of student.
-              </p>
+        <div class="p-4 rounded-xl border border-purple">
+          <div class="flex gap-3 flex-col px-2">
+            <h2 className="text-purple text-xl font-bold mb-4">
+              Announcement Board
+            </h2>
+            <div className="grid gap-2 grid-cols-6 border border-light-purple w-full rounded-xl p-2">
+              <img
+                className="w-full col-span-1 aspect-square"
+                src="/Left.png"
+              />
+              <div className="flex flex-col col-span-5 justify-center">
+                <ScrollingText text="Notice of Special Examination of Spring Semester 2023" />
+                <h6 className="mb-2 text-xs font-bold tracking-tight text-purple">
+                  Artem Artemyev
+                </h6>
+              </div>
             </div>
-            <div class="border-b pb-4 border-gray-400 border-dashed pt-5">
-              <p class="text-xs font-light leading-3 text-gray-500 dark:text-gray-300">
-                10:00 AM
-              </p>
-              <a
-                tabindex="0"
-                class="focus:outline-none text-lg font-medium leading-5 text-gray-800 dark:text-gray-100 mt-2"
-              >
-                Class start (Mathematics)
-              </a>
+            <div className="grid gap-2 grid-cols-6 border border-light-purple w-full rounded-xl p-2">
+              <img
+                className="w-full col-span-1 aspect-square"
+                src="/Right.png"
+              />
+              <div className="flex flex-col col-span-5 justify-center">
+                <ScrollingText text="Time Extension Notice of Semester Admission " />
+                <h6 className="mb-2 text-xs font-bold tracking-tight text-purple">
+                  Artem Artemyev
+                </h6>
+              </div>
             </div>
-            <div class="border-b pb-4 border-gray-400 border-dashed pt-5">
-              <p class="text-xs font-light leading-3 text-gray-500 dark:text-gray-300">
-                11:00 AM
-              </p>
-              <a
-                tabindex="0"
-                class="focus:outline-none text-lg font-medium leading-5 text-gray-800 dark:text-gray-100 mt-2"
-              >
-                Zoom call with Teachers
-              </a>
-              <p class="text-sm pt-2 leading-4 leading-none text-gray-600 dark:text-gray-300">
-                Discussion on current progress etc.
-              </p>
+            <div className="grid gap-2 grid-cols-6 border border-light-purple w-full rounded-xl p-2">
+              <img
+                className="w-full col-span-1 aspect-square"
+                src="/Left.png"
+              />
+              <div className="flex flex-col col-span-5 justify-center">
+                <ScrollingText text="Notice of Special Examination of Spring Semester 2023" />
+                <h6 className="mb-2 text-xs font-bold tracking-tight text-purple">
+                  Artem Artemyev
+                </h6>
+              </div>
             </div>
           </div>
         </div>

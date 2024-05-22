@@ -308,7 +308,7 @@ export default function TestPage() {
           </div>
         </div>
         <Link to="/student-view">
-          <button className="rounded-full bg-purple text-white hover:bg-light-purple hover:text-purple">
+          <button className="rounded-full bg-purple text-white hover:bg-light-purple hover:text-purple mt-8">
             Finish Test &gt;
           </button>
         </Link>

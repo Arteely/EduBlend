@@ -27,12 +27,21 @@ export default function ForumPage() {
         <div className="">
         <h2 className="text-xl my-4 text-purple font-bold">Forum Feed</h2>
           <div className="flex w-full gap-4">
+            <Link to="/forum-post">
             <ForumCard/>
+            </Link>
+            
+            <Link to="/forum-post">
             <ForumCard/>
+            </Link>
           </div>
           <div className="flex w-full gap-4">
-          <ForumCard/>
-          <ForumCard/>
+          <Link to="/forum-post">
+            <ForumCard/>
+            </Link>
+            <Link to="/forum-post">
+            <ForumCard/>
+            </Link>
           </div>
         </div>
       </div>

@@ -35,8 +35,12 @@ export default function TeacherPage() {
           </div>
           <div className="col-span-4">
           <h2 className="text-xl my-4 text-purple font-bold">Classroom Feed</h2>
-            <ForumCard />
-            <ForumCard />
+          <Link to="/forum-post">
+            <ForumCard/>
+            </Link>
+            <Link to="/forum-post">
+            <ForumCard/>
+            </Link>
           </div>
         </div>
       </div>

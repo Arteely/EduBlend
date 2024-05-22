@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scroll {
+
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+
+.scroll-text {
+  animation: scroll 10s ease-in-out infinite;
+}
+
 :root {
   font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
