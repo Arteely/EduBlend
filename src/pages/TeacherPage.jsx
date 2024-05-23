@@ -15,31 +15,37 @@ export default function TeacherPage() {
             </p>
           </subheader>
           <div className="">
-            <button className="px-4 py-1 mr-4 text-sm text-white bg-purple border-2 border-purple rounded-full hover:bg-dark-purple hover:text-white">
-              Make an Announcement
-            </button>
-            <button className="px-4 py-1 mr-4 text-sm text-white bg-purple border-2 border-purple rounded-full hover:bg-dark-purple hover:text-white">
-              Post Homework
-            </button>
+            <Link to="/make-announcement">
+              <button className="px-4 py-1 mr-4 text-sm text-white bg-purple border-2 border-purple rounded-full hover:bg-dark-purple hover:text-white">
+                Make an Announcement
+              </button>
+            </Link>
+            <Link to="/post-homework">
+              <button className="px-4 py-1 mr-4 text-sm text-white bg-purple border-2 border-purple rounded-full hover:bg-dark-purple hover:text-white">
+                Post Homework
+              </button>
+            </Link>
             <Link to="/teacher-forum">
-            <button className="px-4 py-1 text-sm text-white bg-purple border-2 border-purple rounded-full hover:bg-dark-purple hover:text-white">
-              Visit Teacher Forum
-            </button>
+              <button className="px-4 py-1 text-sm text-white bg-purple border-2 border-purple rounded-full hover:bg-dark-purple hover:text-white">
+                Visit Teacher Forum
+              </button>
             </Link>
           </div>
         </div>
         <div className="grid grid-cols-10 gap-6">
           <div className="col-span-6">
             <h2 className="text-xl my-4 text-purple font-bold">Classroom</h2>
-          <StudentBar/>
+            <StudentBar />
           </div>
           <div className="col-span-4">
-          <h2 className="text-xl my-4 text-purple font-bold">Classroom Feed</h2>
-          <Link to="/forum-post">
-            <ForumCard/>
+            <h2 className="text-xl my-4 text-purple font-bold">
+              Classroom Feed
+            </h2>
+            <Link to="/forum-post">
+              <ForumCard />
             </Link>
             <Link to="/forum-post">
-            <ForumCard/>
+              <ForumCard />
             </Link>
           </div>
         </div>

@@ -14,10 +14,11 @@ export default function IndexPage() {
             </h2>
           </div>
           <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            At EduBlend, we believe that every student has a unique way of
+            learning. Our platform is designed to cater to diverse learning
+            styles, ensuring that every student can find a method that resonates
+            with them. EduBlend offers a variety of educational resources to
+            enhance your learning experience.
           </p>
           <div className="column-2 flex gap-12">
             <button className="rounded-3xl px-8  bg-purple hover:bg-dark-purple">
@@ -50,16 +51,18 @@ export default function IndexPage() {
             </h2>
           </div>
           <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Our commitment to providing quality education means that we
+            continuously update our content and teaching methods to include the
+            latest educational research and technology. Whether you're a visual
+            learner who thrives on detailed diagrams and infographics, or a
+            kinesthetic learner who benefits from real-world applications, our
+            resources are tailored to meet your needs.
           </p>
           <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Join EduBlend today and transform the way you learn. Embrace a
+            learning journey that acknowledges and adapts to your individual
+            preferences, helping you achieve your academic and professional
+            goals with confidence.
           </p>
           <h3 className="text-xl font-bold">
             Find your child's learning style.

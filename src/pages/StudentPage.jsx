@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Calendar from "../components/Calendar";
+import { Link } from "react-router-dom";
 function shuffleArray(array) {
   let currentIndex = array.length,
     randomIndex;
@@ -24,17 +25,17 @@ export default function StudentPage() {
 
   useEffect(() => {
     const initialSubjects = [
-      { name: "Math"},
-      { name: "Science"},
-      { name: "Turkish"},
-      { name: "Art"},
-      { name: "History"},
-      { name: "Geography"},
-      { name: "Music"},
-      { name: "Reading"},
-      { name: "PE"},
-      { name: "Geometry"},
-      { name: "Literature"},
+      { name: "Math" },
+      { name: "Science" },
+      { name: "Turkish" },
+      { name: "Art" },
+      { name: "History" },
+      { name: "Geography" },
+      { name: "Music" },
+      { name: "Reading" },
+      { name: "PE" },
+      { name: "Geometry" },
+      { name: "Literature" },
     ];
 
     // Shuffle and slice the array to get only 4 random subjects
@@ -50,21 +51,23 @@ export default function StudentPage() {
         <h3 className="text-center mb-8 text-purple uppercase">
           Suggested Content
         </h3>
-        <div className="border-b border-light-purple pb-8 flex justify-center gap-16">
-          {subjects.map((subject, index) => (
-            <div
-              key={subject.name}
-              className={`p-6 ${
-                index % 2 === 0 ? "bg-purple" : "bg-dark-purple"
-              } text-white uppercase rounded-xl h-40 w-40 flex flex-col items-center justify-center hover:bg-light-purple`}
-            >
-              <div className="w-12 h-12 font-bold text-2xl text-purple bg-white rounded-full flex items-center justify-center">
-                +
+        <Link to="/lesson-page">
+          <div className="border-b border-light-purple pb-8 flex justify-center gap-16">
+            {subjects.map((subject, index) => (
+              <div
+                key={subject.name}
+                className={`p-6 ${
+                  index % 2 === 0 ? "bg-purple" : "bg-dark-purple"
+                } text-white uppercase rounded-xl h-40 w-40 flex flex-col items-center justify-center hover:bg-light-purple`}
+              >
+                <div className="w-12 h-12 font-bold text-2xl text-purple bg-white rounded-full flex items-center justify-center">
+                  +
+                </div>
+                <div className="text-2xl font-bold">{subject.name}</div>
               </div>
-              <div className="text-2xl font-bold">{subject.name}</div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Link>
         <div className="flex">
           <div className="flex flex-1 flex-col m-4 p-4 rounded-xl border border-purple">
             <h2 className="text-purple text-lg font-bold mb-4">

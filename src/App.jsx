@@ -12,6 +12,8 @@ import NoPage from "./pages/NoPage";
 import ForumPage from "./pages/ForumPage";
 import LessonPage from "./pages/LessonPage";
 import ForumPost from "./pages/ForumPost";
+import AnnouncementPage from "./pages/AnnouncementPage";
+import HomeworkPage from "./pages/HomeworkPage";
 
 const App = () => {
   return (
@@ -28,6 +30,8 @@ const App = () => {
           <Route path={"/forum-post"} element={<ForumPost/>} />
           <Route path="*" element={<NoPage />} />
           <Route path={"/lesson-page"} element={<LessonPage/>} />
+          <Route path={"/make-announcement"} element={<AnnouncementPage/>} />
+          <Route path={"/post-homework"} element={<HomeworkPage/>} />
         </Route>
       </Routes>
   );
